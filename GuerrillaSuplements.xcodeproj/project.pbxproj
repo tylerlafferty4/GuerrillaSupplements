@@ -15,6 +15,7 @@
 		D8A2873D1C7242D2000160B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A2873B1C7242D2000160B6 /* LaunchScreen.storyboard */; };
 		D8A287481C7242D2000160B6 /* GuerrillaSuplementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A287471C7242D2000160B6 /* GuerrillaSuplementsTests.swift */; };
 		D8A287531C7242D2000160B6 /* GuerrillaSuplementsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A287521C7242D2000160B6 /* GuerrillaSuplementsUITests.swift */; };
+		D8A287621C726427000160B6 /* ContactUsFieldsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A287611C726427000160B6 /* ContactUsFieldsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D8A2874E1C7242D2000160B6 /* GuerrillaSuplementsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuerrillaSuplementsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A287521C7242D2000160B6 /* GuerrillaSuplementsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuerrillaSuplementsUITests.swift; sourceTree = "<group>"; };
 		D8A287541C7242D2000160B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A287611C726427000160B6 /* ContactUsFieldsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsFieldsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,7 @@
 			children = (
 				D8A287301C7242D2000160B6 /* AppDelegate.swift */,
 				D8A287321C7242D2000160B6 /* FirstViewController.swift */,
-				D8A287341C7242D2000160B6 /* SecondViewController.swift */,
+				D8A287601C726408000160B6 /* Contact Us */,
 				D8A287361C7242D2000160B6 /* Main.storyboard */,
 				D8A287391C7242D2000160B6 /* Assets.xcassets */,
 				D8A2873B1C7242D2000160B6 /* LaunchScreen.storyboard */,
@@ -126,6 +128,15 @@
 				D8A287541C7242D2000160B6 /* Info.plist */,
 			);
 			path = GuerrillaSuplementsUITests;
+			sourceTree = "<group>";
+		};
+		D8A287601C726408000160B6 /* Contact Us */ = {
+			isa = PBXGroup;
+			children = (
+				D8A287341C7242D2000160B6 /* SecondViewController.swift */,
+				D8A287611C726427000160B6 /* ContactUsFieldsTableViewCell.swift */,
+			);
+			name = "Contact Us";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 				D8A287351C7242D2000160B6 /* SecondViewController.swift in Sources */,
 				D8A287311C7242D2000160B6 /* AppDelegate.swift in Sources */,
 				D8A287331C7242D2000160B6 /* FirstViewController.swift in Sources */,
+				D8A287621C726427000160B6 /* ContactUsFieldsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
