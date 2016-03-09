@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8252FBB1C8E655800101433 /* WritingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8252FBA1C8E655800101433 /* WritingsViewController.swift */; };
 		D8A287311C7242D2000160B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A287301C7242D2000160B6 /* AppDelegate.swift */; };
 		D8A287331C7242D2000160B6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A287321C7242D2000160B6 /* FirstViewController.swift */; };
 		D8A287351C7242D2000160B6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A287341C7242D2000160B6 /* SecondViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8252FBA1C8E655800101433 /* WritingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingsViewController.swift; sourceTree = "<group>"; };
 		D8A2872D1C7242D2000160B6 /* GuerrillaSuplements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuerrillaSuplements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A287301C7242D2000160B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8A287321C7242D2000160B6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8252FB91C8E653F00101433 /* Writings On The Wall */ = {
+			isa = PBXGroup;
+			children = (
+				D8252FBA1C8E655800101433 /* WritingsViewController.swift */,
+			);
+			name = "Writings On The Wall";
+			sourceTree = "<group>";
+		};
 		D8A287241C7242D2000160B6 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 			children = (
 				D8A287301C7242D2000160B6 /* AppDelegate.swift */,
 				D8A287321C7242D2000160B6 /* FirstViewController.swift */,
+				D8252FB91C8E653F00101433 /* Writings On The Wall */,
 				D8A287601C726408000160B6 /* Contact Us */,
 				D8A287361C7242D2000160B6 /* Main.storyboard */,
 				D8A287391C7242D2000160B6 /* Assets.xcassets */,
@@ -271,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A287351C7242D2000160B6 /* SecondViewController.swift in Sources */,
+				D8252FBB1C8E655800101433 /* WritingsViewController.swift in Sources */,
 				D8A287311C7242D2000160B6 /* AppDelegate.swift in Sources */,
 				D8A287331C7242D2000160B6 /* FirstViewController.swift in Sources */,
 				D8A287621C726427000160B6 /* ContactUsFieldsTableViewCell.swift in Sources */,
@@ -498,6 +510,7 @@
 				D8A287591C7242D2000160B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8A2875A1C7242D2000160B6 /* Build configuration list for PBXNativeTarget "GuerrillaSuplementsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				D8A2875C1C7242D2000160B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8A2875D1C7242D2000160B6 /* Build configuration list for PBXNativeTarget "GuerrillaSuplementsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				D8A2875F1C7242D2000160B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

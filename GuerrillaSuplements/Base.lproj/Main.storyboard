@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -27,12 +27,12 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wkm-r9-KDc">
                                 <rect key="frame" x="20" y="285" width="560" height="246"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">This is a call to action! 
+                                <string key="text">This is a call to action! 
 Our campaign  to end the onslaught of commercialized, corporate nutrition stores has only just begun. We are the resistance, giving the power back to the consumer. Join us as we put an end to ritualistic sales pitches, broken promises and false hope given  by under-dosed and over-priced supplements. 
 
 We want to liberate you from the bondage and help you make informed decisions about the products you seek. We are dedicated to helping every individual pursue their goals and reach a higher level of satisfaction. 
 
-We are the opposition. We are Guerrilla Supplements.</mutableString>
+We are the opposition. We are Guerrilla Supplements.</string>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -59,7 +59,60 @@ We are the opposition. We are Guerrilla Supplements.</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-634"/>
+        </scene>
+        <!--Writings-->
+        <scene sceneID="RUx-zw-W9f">
+            <objects>
+                <viewController id="FEp-kD-eky" customClass="WritingsViewController" customModule="GuerrillaSuplements" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ugg-tO-o8Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="3GF-Hf-QKW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EgC-8q-j5w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y68-5H-aeC">
+                                <rect key="frame" x="0.0" y="130" width="600" height="421"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FEp-kD-eky" id="nBZ-5V-sY6"/>
+                                    <outlet property="delegate" destination="FEp-kD-eky" id="FpH-lX-9D4"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="writings" translatesAutoresizingMaskIntoConstraints="NO" id="OA2-ym-1nu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="rcN-di-1e8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3GF-Hf-QKW" firstAttribute="top" secondItem="y68-5H-aeC" secondAttribute="bottom" id="BLd-Qk-n1w"/>
+                            <constraint firstAttribute="trailing" secondItem="OA2-ym-1nu" secondAttribute="trailing" id="Dt9-wp-Uhp"/>
+                            <constraint firstItem="OA2-ym-1nu" firstAttribute="top" secondItem="EgC-8q-j5w" secondAttribute="top" id="MID-Rr-7yK"/>
+                            <constraint firstItem="y68-5H-aeC" firstAttribute="leading" secondItem="EgC-8q-j5w" secondAttribute="leading" id="MRY-vg-UDt"/>
+                            <constraint firstAttribute="trailing" secondItem="y68-5H-aeC" secondAttribute="trailing" id="ayA-qq-tOL"/>
+                            <constraint firstItem="y68-5H-aeC" firstAttribute="top" secondItem="Ugg-tO-o8Q" secondAttribute="bottom" id="j6q-5Q-Zmk"/>
+                            <constraint firstItem="y68-5H-aeC" firstAttribute="top" secondItem="OA2-ym-1nu" secondAttribute="bottom" id="pR2-qt-3iy"/>
+                            <constraint firstItem="OA2-ym-1nu" firstAttribute="leading" secondItem="EgC-8q-j5w" secondAttribute="leading" id="zBZ-pv-a4t"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="j6q-5Q-Zmk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Writings" id="zv8-xg-i3Y"/>
+                    <connections>
+                        <outlet property="tableView" destination="y68-5H-aeC" id="T3k-Sp-0mj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPA-7q-JRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744" y="72"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="wg7-f3-ORb">
@@ -73,62 +126,8 @@ We are the opposition. We are Guerrilla Supplements.</mutableString>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsm-mO-XBH">
-                                <rect key="frame" x="0.0" y="20" width="600" height="150"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get In Touch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVB-F6-utX">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="X7W-ie-Wax"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlW-CH-wHX">
-                                        <rect key="frame" x="20" y="50" width="560" height="100"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">If you get what we're trying to do, drop us a word of  encouragement and leave us your email so we can keep you up to date on our progress </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="LVB-F6-utX" firstAttribute="top" secondItem="hsm-mO-XBH" secondAttribute="top" id="2rY-c3-oNK"/>
-                                    <constraint firstItem="MlW-CH-wHX" firstAttribute="top" secondItem="LVB-F6-utX" secondAttribute="bottom" id="9No-yY-jcN"/>
-                                    <constraint firstItem="LVB-F6-utX" firstAttribute="width" secondItem="MlW-CH-wHX" secondAttribute="width" id="ELA-kJ-256"/>
-                                    <constraint firstAttribute="bottom" secondItem="MlW-CH-wHX" secondAttribute="bottom" id="FcD-nI-T2t"/>
-                                    <constraint firstItem="LVB-F6-utX" firstAttribute="leading" secondItem="hsm-mO-XBH" secondAttribute="leading" id="GA4-ii-V74"/>
-                                    <constraint firstAttribute="trailing" secondItem="MlW-CH-wHX" secondAttribute="trailing" constant="20" id="LAT-2c-wvD"/>
-                                    <constraint firstAttribute="trailing" secondItem="LVB-F6-utX" secondAttribute="trailing" id="MSV-xq-osP"/>
-                                    <constraint firstItem="MlW-CH-wHX" firstAttribute="top" secondItem="hsm-mO-XBH" secondAttribute="top" id="MSw-7k-PR4"/>
-                                    <constraint firstAttribute="trailing" secondItem="MlW-CH-wHX" secondAttribute="trailing" id="OBi-7G-asq"/>
-                                    <constraint firstAttribute="bottom" secondItem="LVB-F6-utX" secondAttribute="bottom" id="Pzm-cL-8Pn"/>
-                                    <constraint firstItem="LVB-F6-utX" firstAttribute="top" secondItem="hsm-mO-XBH" secondAttribute="top" id="YJS-j1-lAu"/>
-                                    <constraint firstAttribute="bottom" secondItem="MlW-CH-wHX" secondAttribute="bottom" id="Yqi-3L-OUD"/>
-                                    <constraint firstItem="LVB-F6-utX" firstAttribute="leading" secondItem="hsm-mO-XBH" secondAttribute="leading" id="ao7-gd-hUZ"/>
-                                    <constraint firstAttribute="height" constant="150" id="cH8-Zh-Stg"/>
-                                    <constraint firstItem="MlW-CH-wHX" firstAttribute="leading" secondItem="LVB-F6-utX" secondAttribute="trailing" id="ev2-xf-NIw"/>
-                                    <constraint firstItem="MlW-CH-wHX" firstAttribute="leading" secondItem="hsm-mO-XBH" secondAttribute="leading" constant="20" id="iOa-kL-qxj"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="2rY-c3-oNK"/>
-                                        <exclude reference="ELA-kJ-256"/>
-                                        <exclude reference="Pzm-cL-8Pn"/>
-                                        <exclude reference="ao7-gd-hUZ"/>
-                                        <exclude reference="FcD-nI-T2t"/>
-                                        <exclude reference="MSw-7k-PR4"/>
-                                        <exclude reference="OBi-7G-asq"/>
-                                        <exclude reference="ev2-xf-NIw"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WKE-e1-S3z">
-                                <rect key="frame" x="0.0" y="170" width="600" height="531"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WKE-e1-S3z">
+                                <rect key="frame" x="0.0" y="20" width="600" height="681"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fieldCell" rowHeight="90" id="BYM-YF-bpd" customClass="ContactUsFieldsTableViewCell" customModule="GuerrillaSuplements" customModuleProvider="target">
@@ -144,7 +143,7 @@ We are the opposition. We are Guerrilla Supplements.</mutableString>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijT-Vw-PKY">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijT-Vw-PKY">
                                                     <rect key="frame" x="20" y="37" width="560" height="45"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -203,43 +202,104 @@ We are the opposition. We are Guerrilla Supplements.</mutableString>
                                             <outlet property="titleLbl" destination="OGI-b1-tPF" id="zn3-tV-P0l"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="100" id="Att-aZ-Q29" customClass="ContactUsHeaderCell" customModule="GuerrillaSuplements" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="318" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Att-aZ-Q29" id="PwX-3h-2fh">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbL-nD-gG9">
+                                                    <rect key="frame" x="20" y="0.0" width="560" height="100"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <string key="text">If you get what we're trying to do, drop us a word of  encouragement and leave us your email so we can keep you up to date on our progress </string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xbL-nD-gG9" firstAttribute="top" secondItem="PwX-3h-2fh" secondAttribute="top" id="GXS-BS-vOr"/>
+                                                <constraint firstItem="xbL-nD-gG9" firstAttribute="leading" secondItem="PwX-3h-2fh" secondAttribute="leading" constant="20" id="Hz9-jN-A0j"/>
+                                                <constraint firstAttribute="trailing" secondItem="xbL-nD-gG9" secondAttribute="trailing" constant="20" id="c2H-UN-4WI"/>
+                                                <constraint firstAttribute="bottom" secondItem="xbL-nD-gG9" secondAttribute="bottom" id="hVU-11-knA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="titleLbl" destination="xbL-nD-gG9" id="zNr-6Q-KTb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="checkboxCell" rowHeight="50" id="A5e-65-jOX" customClass="ContactUsSliderCell" customModule="GuerrillaSuplements" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="418" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A5e-65-jOX" id="0zO-To-iJM">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qgO-V4-JzS">
+                                                    <rect key="frame" x="8" y="9" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive Email Updates?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zf-20-my4">
+                                                    <rect key="frame" x="72" y="14" width="183" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Zf-20-my4" firstAttribute="leading" secondItem="qgO-V4-JzS" secondAttribute="trailing" constant="15" id="8L8-eT-2Wl"/>
+                                                <constraint firstItem="4Zf-20-my4" firstAttribute="centerY" secondItem="0zO-To-iJM" secondAttribute="centerY" id="CpS-af-A1U"/>
+                                                <constraint firstItem="qgO-V4-JzS" firstAttribute="centerY" secondItem="0zO-To-iJM" secondAttribute="centerY" id="Ki9-im-oVj"/>
+                                                <constraint firstItem="qgO-V4-JzS" firstAttribute="leading" secondItem="0zO-To-iJM" secondAttribute="leading" constant="8" id="sw5-gX-G2L"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="slider" destination="qgO-V4-JzS" id="Jce-BO-hn2"/>
+                                            <outlet property="titleLbl" destination="4Zf-20-my4" id="zN7-26-1ZD"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="8rJ-Kc-sve" id="Tq9-4d-QHD"/>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="V9o-n4-baG"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjF-mL-hR8">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgd-eb-Rff">
                                 <rect key="frame" x="0.0" y="701" width="600" height="50"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joinRevolution" translatesAutoresizingMaskIntoConstraints="NO" id="ZwQ-4b-7Wm">
+                                        <rect key="frame" x="176" y="0.0" width="248" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5g2-mh-u1u"/>
+                                            <constraint firstAttribute="width" constant="248" id="ooq-d5-h8W"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.094117647058823528" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="XYC-fF-hed"/>
+                                    <constraint firstItem="ZwQ-4b-7Wm" firstAttribute="centerY" secondItem="pgd-eb-Rff" secondAttribute="centerY" id="33m-ud-cWq"/>
+                                    <constraint firstAttribute="height" constant="50" id="9fZ-tX-iIt"/>
+                                    <constraint firstItem="ZwQ-4b-7Wm" firstAttribute="centerX" secondItem="pgd-eb-Rff" secondAttribute="centerX" id="f3J-ZD-n8o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="submitTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Ots-fI-ezi"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WKE-e1-S3z" secondAttribute="trailing" id="0ZO-Om-fqu"/>
-                            <constraint firstItem="hsm-mO-XBH" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="DYG-GQ-gpD"/>
-                            <constraint firstItem="SjF-mL-hR8" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Rjt-y9-Q5l"/>
-                            <constraint firstItem="hsm-mO-XBH" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="RzO-Kj-oTA"/>
-                            <constraint firstAttribute="trailing" secondItem="SjF-mL-hR8" secondAttribute="trailing" id="T8L-JG-c3X"/>
+                            <constraint firstItem="pgd-eb-Rff" firstAttribute="top" secondItem="WKE-e1-S3z" secondAttribute="bottom" id="3hW-Sw-W21"/>
+                            <constraint firstItem="WKE-e1-S3z" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="Do0-cg-zTz"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="pgd-eb-Rff" secondAttribute="bottom" id="JZg-67-TJU"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="WKE-e1-S3z" secondAttribute="bottom" id="ZtT-dq-Yh9"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="SjF-mL-hR8" secondAttribute="bottom" id="lIj-7L-Y4g"/>
-                            <constraint firstItem="WKE-e1-S3z" firstAttribute="top" secondItem="hsm-mO-XBH" secondAttribute="bottom" id="mVc-bx-Df0"/>
-                            <constraint firstAttribute="trailing" secondItem="hsm-mO-XBH" secondAttribute="trailing" id="oYD-dG-4Jg"/>
+                            <constraint firstItem="pgd-eb-Rff" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="b64-MS-u3t"/>
+                            <constraint firstItem="pgd-eb-Rff" firstAttribute="top" secondItem="WKE-e1-S3z" secondAttribute="bottom" id="jld-M0-dLh"/>
+                            <constraint firstAttribute="trailing" secondItem="pgd-eb-Rff" secondAttribute="trailing" id="kyd-rp-wag"/>
                             <constraint firstItem="WKE-e1-S3z" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="ysh-fz-VL7"/>
-                            <constraint firstItem="SjF-mL-hR8" firstAttribute="top" secondItem="WKE-e1-S3z" secondAttribute="bottom" id="zUi-Vy-G7f"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="jld-M0-dLh"/>
                                 <exclude reference="ZtT-dq-Yh9"/>
                             </mask>
                         </variation>
@@ -248,13 +308,14 @@ We are the opposition. We are Guerrilla Supplements.</mutableString>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="800"/>
                     <connections>
-                        <outlet property="headerView" destination="hsm-mO-XBH" id="1Kx-c6-NxD"/>
+                        <outlet property="bottomConstraint" destination="JZg-67-TJU" id="nDW-79-8y5"/>
+                        <outlet property="joinRevolutionImg" destination="ZwQ-4b-7Wm" id="CSI-WV-bXP"/>
                         <outlet property="tableView" destination="WKE-e1-S3z" id="9mc-t6-y6p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="441"/>
+            <point key="canvasLocation" x="750" y="947"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -268,6 +329,7 @@ We are the opposition. We are Guerrilla Supplements.</mutableString>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="FEp-kD-eky" kind="relationship" relationship="viewControllers" id="gXQ-bz-Bfw"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
@@ -278,7 +340,9 @@ We are the opposition. We are Guerrilla Supplements.</mutableString>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="joinRevolution" width="184" height="47"/>
         <image name="logo" width="450" height="300"/>
         <image name="second" width="30" height="30"/>
+        <image name="writings" width="818" height="294"/>
     </resources>
 </document>
