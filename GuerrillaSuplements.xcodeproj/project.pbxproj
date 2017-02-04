@@ -14,8 +14,6 @@
 		D8A287381C7242D2000160B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A287361C7242D2000160B6 /* Main.storyboard */; };
 		D8A2873A1C7242D2000160B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A287391C7242D2000160B6 /* Assets.xcassets */; };
 		D8A2873D1C7242D2000160B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A2873B1C7242D2000160B6 /* LaunchScreen.storyboard */; };
-		D8A287481C7242D2000160B6 /* GuerrillaSuplementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A287471C7242D2000160B6 /* GuerrillaSuplementsTests.swift */; };
-		D8A287531C7242D2000160B6 /* GuerrillaSuplementsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A287521C7242D2000160B6 /* GuerrillaSuplementsUITests.swift */; };
 		D8A287621C726427000160B6 /* ContactUsFieldsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A287611C726427000160B6 /* ContactUsFieldsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,11 +45,7 @@
 		D8A2873C1C7242D2000160B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8A2873E1C7242D2000160B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8A287431C7242D2000160B6 /* GuerrillaSuplementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuerrillaSuplementsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8A287471C7242D2000160B6 /* GuerrillaSuplementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuerrillaSuplementsTests.swift; sourceTree = "<group>"; };
-		D8A287491C7242D2000160B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8A2874E1C7242D2000160B6 /* GuerrillaSuplementsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuerrillaSuplementsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8A287521C7242D2000160B6 /* GuerrillaSuplementsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuerrillaSuplementsUITests.swift; sourceTree = "<group>"; };
-		D8A287541C7242D2000160B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8A287611C726427000160B6 /* ContactUsFieldsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsFieldsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				D8A2872F1C7242D2000160B6 /* GuerrillaSuplements */,
-				D8A287461C7242D2000160B6 /* GuerrillaSuplementsTests */,
-				D8A287511C7242D2000160B6 /* GuerrillaSuplementsUITests */,
 				D8A2872E1C7242D2000160B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,24 +113,6 @@
 				D8A2873E1C7242D2000160B6 /* Info.plist */,
 			);
 			path = GuerrillaSuplements;
-			sourceTree = "<group>";
-		};
-		D8A287461C7242D2000160B6 /* GuerrillaSuplementsTests */ = {
-			isa = PBXGroup;
-			children = (
-				D8A287471C7242D2000160B6 /* GuerrillaSuplementsTests.swift */,
-				D8A287491C7242D2000160B6 /* Info.plist */,
-			);
-			path = GuerrillaSuplementsTests;
-			sourceTree = "<group>";
-		};
-		D8A287511C7242D2000160B6 /* GuerrillaSuplementsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D8A287521C7242D2000160B6 /* GuerrillaSuplementsUITests.swift */,
-				D8A287541C7242D2000160B6 /* Info.plist */,
-			);
-			path = GuerrillaSuplementsUITests;
 			sourceTree = "<group>";
 		};
 		D8A287601C726408000160B6 /* Contact Us */ = {
@@ -218,6 +192,7 @@
 				TargetAttributes = {
 					D8A2872C1C7242D2000160B6 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					D8A287421C7242D2000160B6 = {
 						CreatedOnToolsVersion = 7.2;
@@ -293,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A287481C7242D2000160B6 /* GuerrillaSuplementsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A287531C7242D2000160B6 /* GuerrillaSuplementsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lafftyl.GuerrillaSuplements;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -440,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lafftyl.GuerrillaSuplements;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
